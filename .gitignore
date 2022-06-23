@@ -1,0 +1,2 @@
+#Ignore all jars (Mods Plugins or initial jars)
+*.jar
