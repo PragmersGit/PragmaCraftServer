@@ -1,0 +1,283 @@
+[14:02:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[14:02:12] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[14:02:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[14:02:12] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2860 for Minecraft 1.12.2 loading
+[14:02:12] [main/INFO] [FML]: Java is Java HotSpot(TM) Client VM, version 1.8.0_321, running on Windows 10:x86:10.0, installed at C:\Program Files (x86)\Java\jre1.8.0_321
+[14:02:12] [main/INFO] [FML]: Searching C:\Users\user\Documents\My Games\MineServer\PragmaCraftServer\.\mods for mods
+[14:02:12] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from spongeforge-1.12.2-2838-7.4.8-RC4141.jar
+[14:02:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[14:02:12] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.launch.MixinTweaker
+[14:02:12] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8 Source=file:/C:/Users/user/Documents/My%20Games/MineServer/PragmaCraftServer/./mods/spongeforge-1.12.2-2838-7.4.8-RC4141.jar Service=LaunchWrapper Env=SERVER
+[14:02:12] [main/WARN] [FML]: The coremod SpongeCoremod (org.spongepowered.mod.SpongeCoremod) is not signed!
+[14:02:12] [main/INFO] [mixin]: Compatibility level set to JAVA_8
+[14:02:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[14:02:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[14:02:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[14:02:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[14:02:14] [main/INFO] [FML]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[14:02:14] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[14:02:14] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.launch.MixinTweaker
+[14:02:14] [main/INFO] [mixin]: Initialised Mixin FML Remapper Adapter with net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper@13deac2
+[14:02:14] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[14:02:14] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[14:02:14] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[14:02:14] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[14:02:14] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[14:02:14] [main/WARN] [mixin]: @Mixin target net/minecraft/block/state/BlockStateContainer$StateImplementation is public in mixins.common.api.json:mcp.block.state.StateImplementationMixin_API and should be specified in value
+[14:02:16] [main/WARN] [mixin]: Static binding violation: PRIVATE @Overwrite method func_189509_E in mixins.common.core.json:world.WorldMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
+[14:02:17] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[14:02:22] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting minecraft server version 1.12.2
+[14:02:22] [Server thread/INFO] [FML]: MinecraftForge v14.23.5.2860 Initialized
+[14:02:22] [Server thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[14:02:22] [Server thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[14:02:22] [Server thread/INFO] [FML]: Replaced 1227 ore ingredients
+[14:02:22] [Server thread/INFO] [Sponge]: Found mcmod.info at jar:file:/C:/Users/user/Documents/My%20Games/MineServer/PragmaCraftServer/./mods/spongeforge-1.12.2-2838-7.4.8-RC4141.jar!/mcmod.info
+[14:02:22] [Server thread/INFO] [Sponge]: Creating injector in stage 'PRODUCTION'
+[14:02:25] [Server thread/INFO] [FML]: Searching C:\Users\user\Documents\My Games\MineServer\PragmaCraftServer\.\mods for mods
+[14:02:25] [Server thread/INFO] [FML]: Forge Mod Loader has identified 8 mods to load
+[14:02:25] [Server thread/WARN] [FML]: Missing English translation for FML: assets/fml/lang/en_us.lang
+[14:02:25] [Server thread/WARN] [FML]: Missing English translation for spongeapi: assets/spongeapi/lang/en_us.lang
+[14:02:25] [Server thread/WARN] [FML]: Missing English translation for spongeforge: assets/spongeforge/lang/en_us.lang
+[14:02:25] [Server thread/WARN] [FML]: Missing English translation for trixtalogin: assets/trixtalogin/lang/en_us.lang
+[14:02:25] [Server thread/WARN] [Sponge]: The mod trixtalogin was designed for spongeapi 6.0.0-SNAPSHOT but version 7.4.0-5ea6215 is in use. It may not work properly.
+[14:02:25] [Server thread/WARN] [Sponge]: The mod trixtalogin was designed for spongeapi 6.0.0-SNAPSHOT but version 7.4.0-5ea6215 is in use. It may not work properly.
+[14:02:26] [Server thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, spongeapi, sponge, spongeforge, trixtalogin] at CLIENT
+[14:02:26] [Server thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, spongeapi, sponge, spongeforge, trixtalogin] at SERVER
+[14:02:26] [Server thread/WARN] [Sponge]: There's no certificate fingerprint available
+[14:02:26] [Server thread/INFO] [FML]: Processing ObjectHolder annotations
+[14:02:26] [Server thread/INFO] [FML]: Found 1168 ObjectHolder annotations
+[14:02:26] [Server thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[14:02:26] [Server thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[14:02:26] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[14:02:26] [Forge Version Check/INFO] [forge.VersionCheck]: [spongeforge] Starting version check at https://files.minecraftforge.net/maven/org/spongepowered/spongeforge/promotions_slim.json
+[14:02:26] [Server thread/INFO] [FML]: Applying holder lookups
+[14:02:26] [Server thread/INFO] [FML]: Holder lookups applied
+[14:02:26] [Server thread/INFO] [FML]: Applying holder lookups
+[14:02:26] [Server thread/INFO] [FML]: Holder lookups applied
+[14:02:27] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `sponge` for name `human`, expected `spongeforge`. This could be a intended override, but in most cases indicates a broken mod.
+[14:02:27] [Server thread/INFO] [FML]: Applying holder lookups
+[14:02:27] [Server thread/INFO] [FML]: Holder lookups applied
+[14:02:27] [Server thread/INFO] [FML]: Applying holder lookups
+[14:02:27] [Server thread/INFO] [FML]: Holder lookups applied
+[14:02:27] [Server thread/INFO] [FML]: Injecting itemstacks
+[14:02:27] [Server thread/INFO] [FML]: Itemstack injection complete
+[14:02:27] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Loading properties
+[14:02:27] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Default game type: SURVIVAL
+[14:02:27] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Generating keypair
+[14:02:27] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting Minecraft server on *:25565
+[14:02:27] [Server thread/INFO] [net.minecraft.network.NetworkSystem]: Using default channel type
+[14:02:27] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:02:27] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: The server will make no attempt to authenticate usernames. Beware.
+[14:02:27] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[14:02:27] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:02:27] [Forge Version Check/INFO] [forge.VersionCheck]: [spongeforge] Found status: OUTDATED Target: 7.1.2
+[14:02:27] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[14:02:27] [Server thread/INFO] [FML]: Applying holder lookups
+[14:02:27] [Server thread/INFO] [FML]: Holder lookups applied
+[14:02:27] [Server thread/INFO] [trixtalogin]: Successfully running TrixtaLogin!!!
+[14:02:27] [Server thread/INFO] [FML]: Injecting itemstacks
+[14:02:27] [Server thread/INFO] [FML]: Itemstack injection complete
+[14:02:27] [Server thread/INFO] [FML]: Forge Mod Loader has successfully loaded 8 mods
+[14:02:27] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Preparing level "world"
+[14:02:27] [Server thread/INFO] [Sponge]: Checking for worlds that need to be migrated...
+[14:02:27] [Server thread/INFO] [Sponge]: No worlds were found in need of migration.
+[14:02:27] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[14:02:27] [Server thread/INFO] [FML]: Applying holder lookups
+[14:02:27] [Server thread/INFO] [FML]: Holder lookups applied
+[14:02:28] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: AHEAD Target: null
+[14:02:28] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[14:02:28] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 6 advancement trees
+[14:02:28] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for world world (minecraft:overworld/0)
+[14:02:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 47%
+[14:02:30] [Server thread/INFO] [Sponge]: Loading world [world] (minecraft:overworld/0)
+[14:02:30] [Server thread/WARN] [Sponge]: World [DIM-1] (minecraft:nether/-1) is set to not load on startup. To load it later, enable [load-on-startup] in config or use a plugin.
+[14:02:30] [Server thread/WARN] [Sponge]: World [DIM1] (minecraft:the_end/1) is set to not load on startup. To load it later, enable [load-on-startup] in config or use a plugin.
+[14:02:30] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Done (2,847s)! For help, type "help" or "?"
+[14:02:35] [Netty Server IO #2/INFO] [FML]: Client protocol version 2
+[14:02:35] [Netty Server IO #2/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,tlauncher_custom_cape_skin@1.4,FML@8.0.99.99,forge@14.23.5.2860,mcp@9.42
+[14:02:35] [Netty Server IO #2/INFO] [FML]: Attempting connection with missing mods [spongeapi, sponge, spongeforge, trixtalogin] at CLIENT
+[14:02:36] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[14:02:36] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Kevinuj [/0:0:0:0:0:0:0:1:52550] logged in with entity id [385] in world (minecraft:overworld/0) at (7.5, 63.0, 11.5).
+[14:02:36] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Kevinuj joined the game
+[14:03:01] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Kevinuj lost connection: You have to register/log before time ends
+[14:03:01] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Kevinuj left the game
+[14:03:01] [Server thread/WARN] [net.minecraft.network.NetworkManager]: handleDisconnection() called twice
+[14:03:05] [Netty Server IO #3/INFO] [FML]: Client protocol version 2
+[14:03:05] [Netty Server IO #3/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,tlauncher_custom_cape_skin@1.4,FML@8.0.99.99,forge@14.23.5.2860,mcp@9.42
+[14:03:05] [Netty Server IO #3/INFO] [FML]: Attempting connection with missing mods [spongeapi, sponge, spongeforge, trixtalogin] at CLIENT
+[14:03:06] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[14:03:06] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Kevinuj [/0:0:0:0:0:0:0:1:52571] logged in with entity id [389] in world (minecraft:overworld/0) at (7.5, 63.0, 11.5).
+[14:03:06] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Kevinuj joined the game
+[14:03:31] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Kevinuj lost connection: You have to register/log before time ends
+[14:03:31] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Kevinuj left the game
+[14:03:31] [Server thread/WARN] [net.minecraft.network.NetworkManager]: handleDisconnection() called twice
+[14:03:35] [Netty Server IO #4/INFO] [FML]: Client protocol version 2
+[14:03:35] [Netty Server IO #4/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,tlauncher_custom_cape_skin@1.4,FML@8.0.99.99,forge@14.23.5.2860,mcp@9.42
+[14:03:35] [Netty Server IO #4/INFO] [FML]: Attempting connection with missing mods [spongeapi, sponge, spongeforge, trixtalogin] at CLIENT
+[14:03:35] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[14:03:35] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Kevinuj [/0:0:0:0:0:0:0:1:52604] logged in with entity id [392] in world (minecraft:overworld/0) at (7.5, 63.0, 11.5).
+[14:03:35] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Kevinuj joined the game
+[14:03:55] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Opped kevinuj
+[14:04:01] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Set own game mode to Creative Mode]
+[14:04:34] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Set the time to 1000]
+[14:04:48] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Set the time to 0]
+[14:04:51] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Set the time to 100]
+[14:04:59] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Set the time to 10000]
+[14:05:36] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Set the time to 100000]
+[14:05:43] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Set the time to 2500]
+[14:05:49] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Set the time to 1000]
+[14:06:01] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Game rule doDaylightCycle has been updated to false]
+[14:06:18] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Changing to clear weather]
+[14:07:08] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Kevinuj: Set game difficulty to Peaceful]
+[14:07:14] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Kevinuj lost connection: Disconnected
+[14:07:14] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Kevinuj left the game
+[14:08:44] [Server thread/INFO] [FML]: Connection received without FML marker, assuming vanilla.
+[14:08:44] [Server thread/INFO] [FML]: Opening channel which already seems to have a state set. This is a vanilla connection. Handshake handler will stop now
+[14:08:44] [Server thread/INFO] [FML]: [Server thread] Server side vanilla connection established
+[14:08:44] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Thezrra [/0:0:0:0:0:0:0:1:53017] logged in with entity id [1005] in world (minecraft:overworld/0) at (4.247283458709717, 64.0, 5.112825393676758).
+[14:08:44] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Thezrra joined the game
+[14:09:09] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Thezrra lost connection: You have to register/log before time ends
+[14:09:09] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Thezrra left the game
+[14:09:09] [Server thread/WARN] [net.minecraft.network.NetworkManager]: handleDisconnection() called twice
+[14:10:17] [Server thread/INFO] [FML]: Connection received without FML marker, assuming vanilla.
+[14:10:17] [Server thread/INFO] [FML]: Opening channel which already seems to have a state set. This is a vanilla connection. Handshake handler will stop now
+[14:10:17] [Server thread/INFO] [FML]: [Server thread] Server side vanilla connection established
+[14:10:17] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Thezrra [/0:0:0:0:0:0:0:1:53161] logged in with entity id [2702] in world (minecraft:overworld/0) at (4.247283458709717, 64.0, 5.112825393676758).
+[14:10:17] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Thezrra joined the game
+[14:11:02] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Thezrra lost connection: Disconnected
+[14:11:02] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Thezrra left the game
+[14:14:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:15:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:16:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:16:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:17:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:18:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:19:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:19:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:20:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:21:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:22:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:22:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:23:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:24:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:25:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:25:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:26:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:27:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:28:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:28:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:29:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:30:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:31:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:31:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:32:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:33:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:34:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:34:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:35:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:36:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:37:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:37:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:38:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:39:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:40:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:40:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:41:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:42:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:43:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:43:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:44:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:45:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:46:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:46:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:47:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:48:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:49:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:49:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:50:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:51:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:52:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:52:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:53:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:54:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:55:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:55:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:56:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:57:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:58:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:58:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[14:59:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:00:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:01:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:01:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:02:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:03:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:04:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:04:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:05:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:06:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:07:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:07:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:08:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:09:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:10:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:10:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:11:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:12:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:13:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:13:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:14:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:15:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:16:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:16:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:17:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:18:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:19:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:19:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:20:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:21:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:22:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:22:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:23:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:24:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:25:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:25:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:26:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:27:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:28:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:28:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:29:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:30:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:31:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:31:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:32:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:33:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:34:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:34:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:35:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:36:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:37:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:37:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:38:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:39:15] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:40:00] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:40:45] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:41:30] [Server thread/WARN] [Sponge]: EntityRabbit['Rabbit'/263, l='world', x=47,96, y=75,00, z=143,47] is not in chunk (3, 8) and is instead in chunk (2, 8) within world world, skipping save. This is a bug fix to a vanilla bug. Do not report this to Sponge or Forge please.
+[15:41:43] [Netty Server IO #20/INFO] [FML]: Client protocol version 2
+[15:41:43] [Netty Server IO #20/INFO] [FML]: Client attempting to join with 4 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2860,mcp@9.42
+[15:41:43] [Netty Server IO #20/INFO] [FML]: Attempting connection with missing mods [spongeapi, sponge, spongeforge, trixtalogin] at CLIENT
+[15:41:44] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[15:41:44] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: XFlichX [/0:0:0:0:0:0:0:1:59898] logged in with entity id [5702] in world (minecraft:overworld/0) at (6.5, 64.0, 5.5).
+[15:41:44] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: XFlichX joined the game
+[15:42:09] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: XFlichX lost connection: You have to register/log before time ends
+[15:42:09] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: XFlichX left the game
+[15:42:09] [Server thread/WARN] [net.minecraft.network.NetworkManager]: handleDisconnection() called twice
+[15:42:38] [Netty Server IO #21/INFO] [FML]: Client protocol version 2
+[15:42:38] [Netty Server IO #21/INFO] [FML]: Client attempting to join with 4 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2860,mcp@9.42
+[15:42:38] [Netty Server IO #21/INFO] [FML]: Attempting connection with missing mods [spongeapi, sponge, spongeforge, trixtalogin] at CLIENT
+[15:42:39] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[15:42:39] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: XFlichX [/0:0:0:0:0:0:0:1:59967] logged in with entity id [7476] in world (minecraft:overworld/0) at (6.5, 64.0, 5.5).
+[15:42:39] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: XFlichX joined the game
+[16:04:47] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: XFlichX lost connection: Disconnected
+[16:04:47] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: XFlichX left the game
+[16:24:20] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 4520ms behind, skipping 90 tick(s)
