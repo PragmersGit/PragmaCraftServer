@@ -1,0 +1,75 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  SpongeCoremod (spongeforge-1.12.2-2838-7.4.8-RC4141.jar)
+Contact their authors BEFORE contacting forge
+
+// This doesn't make any sense!
+
+Time: 25/06/22 01:02 PM
+Description: Exception in server tick loop
+
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:516)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.handler$zjh000$onCrashReport(MinecraftServer.java:4687)
+
+-- Sponge PhaseTracker --
+Details:
+	Phase Stack: [Empty stack]
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.handler$zjh000$onCrashReport(MinecraftServer.java:4687)
+	at net.minecraft.server.MinecraftServer.func_71230_b(MinecraftServer.java:889)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71230_b(DedicatedServer.java:371)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:558)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (x86) version 10.0
+	Java Version: 1.8.0_321, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Oracle Corporation
+	Memory: 784653200 bytes (748 MB) / 1354235904 bytes (1291 MB) up to 1354235904 bytes (1291 MB)
+	JVM Flags: 2 total; -Xms1336M -Xmx1336M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 11 mods loaded, 11 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	Mods:
+
+	| State  | ID          | Version                  | Source                                   | Signature                                |
+	|:------ |:----------- |:------------------------ |:---------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft   | 1.12.2                   | minecraft.jar                            | None                                     |
+	| LCHIJA | mcp         | 9.42                     | minecraft.jar                            | None                                     |
+	| LCHIJA | FML         | 8.0.99.99                | forge-1.12.2-14.23.5.2860.jar            | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge       | 14.23.5.2860             | forge-1.12.2-14.23.5.2860.jar            | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | spongeapi   | 7.4.0-5ea6215            | spongeforge-1.12.2-2838-7.4.8-RC4141.jar | None                                     |
+	| LCHIJA | sponge      | 1.12.2-7.4.8-SNAPSHOT    | spongeforge-1.12.2-2838-7.4.8-RC4141.jar | None                                     |
+	| LCHIJA | spongeforge | 1.12.2-2838-7.4.8-RC4141 | spongeforge-1.12.2-2838-7.4.8-RC4141.jar | None                                     |
+
+
+	Plugins:
+
+	| State  | ID          | Version     | Source                                         | Signature |
+	|:------ |:----------- |:----------- |:---------------------------------------------- |:--------- |
+	| LCHIJA | cosmos      | 1.2.0-7.3.0 | cosmos-1.2.0-7.3.0.jar                         | None      |
+	| LCHIJA | luckperms   | 5.3.98      | LuckPerms-Sponge-5.3.98.jar                    | None      |
+	| LCHIJA | nucleus     | 2.4.1       | Nucleus-2.4.1-MC1.12.2-SpongeAPI7.3-plugin.jar | None      |
+	| LCHIJA | trixtalogin | 1.0         | TrixtaLogin.jar                                | None      |
+
+	Loaded coremods (and transformers): 
+SpongeCoremod (spongeforge-1.12.2-2838-7.4.8-RC4141.jar)
+  org.spongepowered.common.launch.transformer.SpongeSuperclassTransformer
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 20; []
+	Is Modded: Definitely; Server brand changed to 'fml,forge,sponge'
+	Type: Dedicated Server (map_server.txt)

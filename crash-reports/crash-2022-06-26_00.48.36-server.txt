@@ -1,0 +1,782 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  SpongeCoremod (spongeforge-1.12.2-2838-7.4.8-RC4141.jar)
+Contact their authors BEFORE contacting forge
+
+// I bet Cylons wouldn't have this problem.
+
+Time: 26/06/22 12:48 AM
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60,00 seconds (should be max 0.05)
+	at java.lang.System.identityHashCode(Native Method)
+	at java.util.IdentityHashMap.hash(Unknown Source)
+	at java.util.IdentityHashMap.get(Unknown Source)
+	at net.minecraftforge.registries.GameData$BlockCallbacks$1.get(GameData.java:387)
+	at net.minecraftforge.registries.GameData$BlockCallbacks$1.func_148747_b(GameData.java:382)
+	at net.minecraft.world.chunk.ChunkPrimer.func_177855_a(SourceFile:21)
+	at org.spongepowered.common.world.gen.SpongeChunkGenerator.generateBiomeTerrain(SpongeChunkGenerator.java:603)
+	at org.spongepowered.common.world.gen.SpongeChunkGenerator.replaceBiomeBlocks(SpongeChunkGenerator.java:551)
+	at org.spongepowered.mod.world.gen.SpongeChunkGeneratorForge.replaceBiomeBlocks(SpongeChunkGeneratorForge.java:155)
+	at org.spongepowered.common.world.gen.SpongeChunkGenerator.func_185932_a(SpongeChunkGenerator.java:253)
+	at net.minecraft.world.gen.ChunkProviderServer.redirect$bbj000$impl$generateChunkWithSponge(ChunkProviderServer.java:2071)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:143)
+	at net.minecraft.world.World.func_72964_e(World.java:310)
+	at net.minecraft.world.World.func_175726_f(World.java:305)
+	at net.minecraft.world.WorldServer.func_180495_p(WorldServer.java:5085)
+	at com.sk89q.worldedit.forge.ForgeWorld.getBlock(ForgeWorld.java:354)
+	at com.sk89q.worldedit.EditSession.getBlock(EditSession.java:417)
+	at com.sk89q.worldedit.EditSession.makeForest(EditSession.java:1804)
+	at com.sk89q.worldedit.command.GenerationCommands.forestGen(GenerationCommands.java:202)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sk89q.worldedit.util.command.parametric.ParametricCallable.call(ParametricCallable.java:228)
+	at com.sk89q.worldedit.util.command.SimpleDispatcher.call(SimpleDispatcher.java:125)
+	at com.sk89q.worldedit.extension.platform.CommandManager.handleCommand(CommandManager.java:249)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sk89q.worldedit.util.eventbus.MethodEventHandler.dispatch(MethodEventHandler.java:58)
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73)
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:187)
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:173)
+	at com.sk89q.worldedit.forge.ForgeWorldEdit.onCommandEvent(ForgeWorldEdit.java:145)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_17_ForgeWorldEdit_onCommandEvent_CommandEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.forgeBridge$post(EventBus.java:756)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:706)
+	at org.spongepowered.mod.command.ForgeMinecraftCommandWrapper.throwEvent(ForgeMinecraftCommandWrapper.java:49)
+	at org.spongepowered.common.command.MinecraftCommandWrapper.process(MinecraftCommandWrapper.java:118)
+	at org.spongepowered.common.command.SpongeCommandDispatcher.process(SpongeCommandDispatcher.java:355)
+	at org.spongepowered.common.command.SpongeCommandManager.process(SpongeCommandManager.java:360)
+	at net.minecraft.command.ServerCommandManager.func_71556_a(SourceFile:665)
+	at net.minecraft.network.NetHandlerPlayServer.func_147361_d(NetHandlerPlayServer.java:962)
+	at net.minecraft.network.NetHandlerPlayServer.func_147354_a(NetHandlerPlayServer.java:941)
+	at net.minecraft.network.play.client.CPacketChatMessage.func_148833_a(SourceFile:37)
+	at net.minecraft.network.play.client.CPacketChatMessage.func_148833_a(SourceFile:9)
+	at org.spongepowered.common.event.tracking.phase.packet.PacketPhaseUtil.onProcessPacket(PacketPhaseUtil.java:219)
+	at net.minecraft.network.PacketThreadUtil$1.redirect$zld000$impl$redirectToPhaseTracker(SourceFile:540)
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46)
+	at org.spongepowered.common.SpongeImplHooks.onUtilRunTask(SpongeImplHooks.java:331)
+	at net.minecraft.server.MinecraftServer.redirect$zjh000$onRun(MinecraftServer.java:4682)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:723)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:397)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at java.lang.System.identityHashCode(Native Method)
+	at java.util.IdentityHashMap.hash(Unknown Source)
+	at java.util.IdentityHashMap.get(Unknown Source)
+	at net.minecraftforge.registries.GameData$BlockCallbacks$1.get(GameData.java:387)
+	at net.minecraftforge.registries.GameData$BlockCallbacks$1.func_148747_b(GameData.java:382)
+	at net.minecraft.world.chunk.ChunkPrimer.func_177855_a(SourceFile:21)
+	at org.spongepowered.common.world.gen.SpongeChunkGenerator.generateBiomeTerrain(SpongeChunkGenerator.java:603)
+	at org.spongepowered.common.world.gen.SpongeChunkGenerator.replaceBiomeBlocks(SpongeChunkGenerator.java:551)
+	at org.spongepowered.mod.world.gen.SpongeChunkGeneratorForge.replaceBiomeBlocks(SpongeChunkGeneratorForge.java:155)
+	at org.spongepowered.common.world.gen.SpongeChunkGenerator.func_185932_a(SpongeChunkGenerator.java:253)
+	at net.minecraft.world.gen.ChunkProviderServer.redirect$bbj000$impl$generateChunkWithSponge(ChunkProviderServer.java:2071)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:143)
+	at net.minecraft.world.World.func_72964_e(World.java:310)
+	at net.minecraft.world.World.func_175726_f(World.java:305)
+	at net.minecraft.world.WorldServer.func_180495_p(WorldServer.java:5085)
+	at com.sk89q.worldedit.forge.ForgeWorld.getBlock(ForgeWorld.java:354)
+	at com.sk89q.worldedit.EditSession.getBlock(EditSession.java:417)
+	at com.sk89q.worldedit.EditSession.makeForest(EditSession.java:1804)
+	at com.sk89q.worldedit.command.GenerationCommands.forestGen(GenerationCommands.java:202)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sk89q.worldedit.util.command.parametric.ParametricCallable.call(ParametricCallable.java:228)
+	at com.sk89q.worldedit.util.command.SimpleDispatcher.call(SimpleDispatcher.java:125)
+	at com.sk89q.worldedit.extension.platform.CommandManager.handleCommand(CommandManager.java:249)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sk89q.worldedit.util.eventbus.MethodEventHandler.dispatch(MethodEventHandler.java:58)
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73)
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:187)
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:173)
+	at com.sk89q.worldedit.forge.ForgeWorldEdit.onCommandEvent(ForgeWorldEdit.java:145)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_17_ForgeWorldEdit_onCommandEvent_CommandEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.forgeBridge$post(EventBus.java:756)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:706)
+	at org.spongepowered.mod.command.ForgeMinecraftCommandWrapper.throwEvent(ForgeMinecraftCommandWrapper.java:49)
+	at org.spongepowered.common.command.MinecraftCommandWrapper.process(MinecraftCommandWrapper.java:118)
+	at org.spongepowered.common.command.SpongeCommandDispatcher.process(SpongeCommandDispatcher.java:355)
+	at org.spongepowered.common.command.SpongeCommandManager.process(SpongeCommandManager.java:360)
+	at net.minecraft.command.ServerCommandManager.func_71556_a(SourceFile:665)
+	at net.minecraft.network.NetHandlerPlayServer.func_147361_d(NetHandlerPlayServer.java:962)
+	at net.minecraft.network.NetHandlerPlayServer.func_147354_a(NetHandlerPlayServer.java:941)
+	at net.minecraft.network.play.client.CPacketChatMessage.func_148833_a(SourceFile:37)
+	at net.minecraft.network.play.client.CPacketChatMessage.func_148833_a(SourceFile:9)
+	at org.spongepowered.common.event.tracking.phase.packet.PacketPhaseUtil.onProcessPacket(PacketPhaseUtil.java:219)
+	at net.minecraft.network.PacketThreadUtil$1.redirect$zld000$impl$redirectToPhaseTracker(SourceFile:540)
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46)
+	at org.spongepowered.common.SpongeImplHooks.onUtilRunTask(SpongeImplHooks.java:331)
+	at net.minecraft.server.MinecraftServer.redirect$zjh000$onRun(MinecraftServer.java:4682)
+
+-- Sponge PhaseTracker --
+Details:
+	Phase Stack: /************************************************************************************************/
+/*   - Phase: Generation{Terrain:TERRAIN_GENERATION}                                            */
+/*     Context:                                                                                 */
+/*     - World: WorldServer{Name=survival, DimensionId=2, DimensionType=minecraft:overworld}    */
+/*   - Phase: Plugin{EventListener}                                                             */
+/*     Context:                                                                                 */
+/*     - Source: FMLMod:worldedit{6.1.10-SNAPSHOT}                                              */
+/*     - CapturedBlocks: MultiBlockCaptureSupplier{Captured=504982, Head=null}                  */
+/*     - Listener: net.minecraftforge.event.CommandEvent@13e5e53                                */
+/*   - Phase: General{Command}                                                                  */
+/*     Context:                                                                                 */
+/*     - Owner: EntityPlayerMP['Kevinuj'/43, l='survival', x=-255,92, y=76,54, z=225,23]        */
+/*     - Source: EntityPlayerMP['Kevinuj'/43, l='survival', x=-255,92, y=76,54, z=225,23]       */
+/*     - Command: forestgen 1000 tree 10                                                        */
+/*     -Inventory: []                                                                           */
+/*   - Phase: Packet{Unknown}                                                                   */
+/*     Context:                                                                                 */
+/*     - Owner: EntityPlayerMP['Kevinuj'/43, l='survival', x=-255,92, y=76,54, z=225,23]        */
+/*     - Source: EntityPlayerMP['Kevinuj'/43, l='survival', x=-255,92, y=76,54, z=225,23]       */
+/*     - PacketPlayer: EntityPlayerMP['Kevinuj'/43, l='survival', x=-255,92, y=76,54, z=225,23] */
+/*     - Packet: net.minecraft.network.play.client.CPacketChatMessage@1d3098a                   */
+/*     - IgnoreCreative: false                                                                  */
+/*     - ItemStackUsed: 1xtile.air@0                                                            */
+/*     - OpenContainer: null                                                                    */
+/*   - Phase: Plugin{ScheduledTask}                                                             */
+/*     Context:                                                                                 */
+/*     - Source: com.google.common.util.concurrent.ListenableFutureTask@1e312d3                 */
+/************************************************************************************************/
+
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.handler$zjh000$onCrashReport(MinecraftServer.java:4687)
+	at net.minecraft.server.MinecraftServer.func_71230_b(MinecraftServer.java:889)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71230_b(DedicatedServer.java:371)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+-- Thread Dump --
+Details:
+	Threads: "Netty Server IO #10" Id=107 WAITING on java.util.concurrent.CompletableFuture$Signaller@abd52c
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.CompletableFuture$Signaller@abd52c
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Signaller.block(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.util.concurrent.CompletableFuture.waitingGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.join(Unknown Source)
+	at io.github.nucleuspowered.nucleus.modules.vanish.listener.VanishListener.onAuth(VanishListener.java:71)
+	at org.spongepowered.common.event.listener.AuthListener_VanishListener_onAuth55.handle(Unknown Source)
+	...
+
+
+"ForkJoinPool-1-worker-3" Id=106 TIMED_WAITING on java.util.concurrent.ForkJoinPool@6c35c9
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6c35c9
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"Netty Server IO #9" Id=105 WAITING on java.util.concurrent.CompletableFuture$Signaller@53be5c
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.CompletableFuture$Signaller@53be5c
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Signaller.block(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.util.concurrent.CompletableFuture.waitingGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.join(Unknown Source)
+	at io.github.nucleuspowered.nucleus.modules.vanish.listener.VanishListener.onAuth(VanishListener.java:71)
+	at org.spongepowered.common.event.listener.AuthListener_VanishListener_onAuth55.handle(Unknown Source)
+	...
+
+
+"Netty Server IO #8" Id=104 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@1513ff2
+	-  locked java.util.Collections$UnmodifiableSet@1f98f01
+	-  locked sun.nio.ch.WindowsSelectorImpl@59be6
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"pool-2-thread-26" Id=103 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"pool-2-thread-25" Id=102 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"pool-2-thread-24" Id=101 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"pool-2-thread-23" Id=100 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"pool-2-thread-22" Id=99 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"pool-2-thread-20" Id=95 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"pool-2-thread-19" Id=92 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"pool-2-thread-16" Id=86 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@20228a
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"Sponge - Async Light Thread" Id=78 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@162cccc
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@162cccc
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Sponge - Async Light Thread" Id=77 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@162cccc
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@162cccc
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Chunk I/O Executor Thread-1" Id=70 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@17ec0bd
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@17ec0bd
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #7" Id=67 BLOCKED on java.util.ArrayDeque@a2dd54 owned by "Server thread" Id=16
+	at net.minecraft.server.MinecraftServer.func_175586_a(MinecraftServer.java:1373)
+	-  blocked on java.util.ArrayDeque@a2dd54
+	at net.minecraft.server.MinecraftServer.func_152344_a(MinecraftServer.java:1395)
+	at net.minecraft.world.WorldServer.func_152344_a(WorldServer.java:1335)
+	at net.minecraft.network.PacketThreadUtil.func_180031_a(SourceFile:10)
+	at net.minecraft.network.NetHandlerPlayServer.func_147347_a(NetHandlerPlayServer.java:454)
+	at net.minecraft.network.play.client.CPacketPlayer.func_148833_a(SourceFile:126)
+	at net.minecraft.network.play.client.CPacketPlayer$Rotation.func_148833_a(SourceFile:88)
+	at net.minecraft.network.NetworkManager.channelRead0(NetworkManager.java:147)
+	...
+
+
+"Netty Server IO #6" Id=66 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@11d8b78
+	-  locked java.util.Collections$UnmodifiableSet@6622bb
+	-  locked sun.nio.ch.WindowsSelectorImpl@d9d31
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Netty Server IO #5" Id=65 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@1307f62
+	-  locked java.util.Collections$UnmodifiableSet@1e841ad
+	-  locked sun.nio.ch.WindowsSelectorImpl@19a2b13
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Netty Server IO #4" Id=64 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@4f5563
+	-  locked java.util.Collections$UnmodifiableSet@17fd9eb
+	-  locked sun.nio.ch.WindowsSelectorImpl@a15ab0
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Netty Server IO #3" Id=63 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@1687049
+	-  locked java.util.Collections$UnmodifiableSet@aae0
+	-  locked sun.nio.ch.WindowsSelectorImpl@5d8de1
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"File IO Thread" Id=62 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.world.storage.ThreadedFileIOBase.func_75736_b(SourceFile:51)
+	at net.minecraft.world.storage.ThreadedFileIOBase.run(SourceFile:30)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"luckperms-command-executor" Id=61 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b0044e
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b0044e
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Sponge - Async Light Thread" Id=60 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1933832
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1933832
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Sponge - Async Light Thread" Id=59 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1933832
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1933832
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #2" Id=57 BLOCKED on java.util.ArrayDeque@a2dd54 owned by "Server thread" Id=16
+	at net.minecraft.server.MinecraftServer.func_175586_a(MinecraftServer.java:1373)
+	-  blocked on java.util.ArrayDeque@a2dd54
+	at net.minecraft.server.MinecraftServer.func_152344_a(MinecraftServer.java:1395)
+	at net.minecraft.world.WorldServer.func_152344_a(WorldServer.java:1335)
+	at net.minecraft.network.PacketThreadUtil.func_180031_a(SourceFile:10)
+	at net.minecraft.network.NetHandlerPlayServer.func_147347_a(NetHandlerPlayServer.java:454)
+	at net.minecraft.network.play.client.CPacketPlayer.func_148833_a(SourceFile:126)
+	at net.minecraft.network.play.client.CPacketPlayer$Position.func_148833_a(SourceFile:57)
+	at net.minecraft.network.NetworkManager.channelRead0(NetworkManager.java:147)
+	...
+
+
+"threadDeathWatcher-2-1" Id=56 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at io.netty.util.ThreadDeathWatcher$Watcher.run(ThreadDeathWatcher.java:152)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #1" Id=55 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@18bf531
+	-  locked java.util.Collections$UnmodifiableSet@e5094a
+	-  locked sun.nio.ch.WindowsSelectorImpl@18d16a9
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Thread-9" Id=54 RUNNABLE (in native)
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(Unknown Source)
+	at sun.nio.fs.WindowsWatchService$Poller.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Server Watchdog" Id=53 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:45)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Timer-1" Id=52 TIMED_WAITING on java.util.TaskQueue@9fe96c
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@9fe96c
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+
+"Netty Server IO #0" Id=51 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@af08e5
+	-  locked java.util.Collections$UnmodifiableSet@db40fc
+	-  locked sun.nio.ch.WindowsSelectorImpl@98599b
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"MVStore background writer nio:C:/Users/user/Documents/My Games/MineServer/PragmaCraftServer/luckperms/luckperms-h2.mv.db" Id=48 TIMED_WAITING on java.lang.Object@6cab74
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@6cab74
+	at org.h2.mvstore.MVStore$BackgroundWriterThread.run(MVStore.java:3116)
+
+
+"Thread-4" Id=46 RUNNABLE (in native)
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(Unknown Source)
+	at sun.nio.fs.WindowsWatchService$Poller.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"pool-2-thread-7" Id=42 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@19fe81c
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@19fe81c
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingDeque.takeFirst(Unknown Source)
+	at java.util.concurrent.LinkedBlockingDeque.take(Unknown Source)
+	at sun.nio.fs.AbstractWatchService.take(Unknown Source)
+	at me.lucko.luckperms.common.storage.implementation.file.watcher.AbstractFileWatcher.runEventProcessingLoop(AbstractFileWatcher.java:128)
+	at me.lucko.luckperms.common.storage.implementation.file.watcher.FileWatcher.lambda$new$0(FileWatcher.java:60)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@f87038
+
+
+"Timer-0" Id=30 TIMED_WAITING on java.util.TaskQueue@1b53aaa
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@1b53aaa
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-1" Id=29 WAITING on java.util.concurrent.ForkJoinPool@15f44c0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@15f44c0
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-8" Id=28 WAITING on java.util.concurrent.ForkJoinPool@15f44c0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@15f44c0
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-15" Id=27 WAITING on java.util.concurrent.ForkJoinPool@15f44c0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@15f44c0
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-6" Id=26 WAITING on java.util.concurrent.ForkJoinPool@15f44c0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@15f44c0
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-13" Id=25 WAITING on java.util.concurrent.ForkJoinPool@15f44c0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@15f44c0
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-4" Id=24 WAITING on java.util.concurrent.ForkJoinPool@15f44c0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@15f44c0
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-11" Id=23 TIMED_WAITING on java.util.concurrent.ForkJoinPool@15f44c0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@15f44c0
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-2" Id=22 WAITING on java.util.concurrent.ForkJoinPool@15f44c0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@15f44c0
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-9" Id=21 WAITING on java.util.concurrent.ForkJoinPool@15f44c0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@15f44c0
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"Sponge Async Scheduler Thread" Id=20 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@f97c54
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@f97c54
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at org.spongepowered.common.scheduler.AsyncScheduler.preTick(AsyncScheduler.java:121)
+	at org.spongepowered.common.scheduler.SchedulerBase.runTick(SchedulerBase.java:109)
+	at org.spongepowered.common.scheduler.AsyncScheduler.mainLoop(AsyncScheduler.java:68)
+	at org.spongepowered.common.scheduler.AsyncScheduler$$Lambda$139/21313159.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"DestroyJavaVM" Id=19 RUNNABLE
+
+
+"Server console handler" Id=18 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	-  locked java.io.BufferedInputStream@abd9f
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	-  locked java.io.InputStreamReader@d2a41e
+	at java.io.InputStreamReader.read(Unknown Source)
+	...
+
+
+"Server thread" Id=16 RUNNABLE
+	at java.lang.System.identityHashCode(Native Method)
+	at java.util.IdentityHashMap.hash(Unknown Source)
+	at java.util.IdentityHashMap.get(Unknown Source)
+	at net.minecraftforge.registries.GameData$BlockCallbacks$1.get(GameData.java:387)
+	at net.minecraftforge.registries.GameData$BlockCallbacks$1.func_148747_b(GameData.java:382)
+	at net.minecraft.world.chunk.ChunkPrimer.func_177855_a(SourceFile:21)
+	at org.spongepowered.common.world.gen.SpongeChunkGenerator.generateBiomeTerrain(SpongeChunkGenerator.java:603)
+	at org.spongepowered.common.world.gen.SpongeChunkGenerator.replaceBiomeBlocks(SpongeChunkGenerator.java:551)
+	...
+
+
+"Server Infinisleeper" Id=15 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:82)
+
+
+"Snooper Timer" Id=14 TIMED_WAITING on java.util.TaskQueue@1769dc0
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@1769dc0
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+
+"Attach Listener" Id=5 RUNNABLE
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@1045a6
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@1045a6
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@139f63e
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@139f63e
+	at java.lang.Object.wait(Unknown Source)
+	at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+	at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (x86) version 10.0
+	Java Version: 1.8.0_321, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Oracle Corporation
+	Memory: 362028760 bytes (345 MB) / 1354235904 bytes (1291 MB) up to 1354235904 bytes (1291 MB)
+	JVM Flags: 2 total; -Xms1336M -Xmx1336M
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 15 mods loaded, 15 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	Mods:
+
+	| State  | ID          | Version                  | Source                                            | Signature                                |
+	|:------ |:----------- |:------------------------ |:------------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft   | 1.12.2                   | minecraft.jar                                     | None                                     |
+	| LCHIJA | mcp         | 9.42                     | minecraft.jar                                     | None                                     |
+	| LCHIJA | FML         | 8.0.99.99                | forge-1.12.2-14.23.5.2860.jar                     | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge       | 14.23.5.2860             | forge-1.12.2-14.23.5.2860.jar                     | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | spongeapi   | 7.4.0-5ea6215            | spongeforge-1.12.2-2838-7.4.8-RC4141.jar          | None                                     |
+	| LCHIJA | sponge      | 1.12.2-7.4.8-SNAPSHOT    | spongeforge-1.12.2-2838-7.4.8-RC4141.jar          | None                                     |
+	| LCHIJA | spongeforge | 1.12.2-2838-7.4.8-RC4141 | spongeforge-1.12.2-2838-7.4.8-RC4141.jar          | None                                     |
+	| LCHIJA | worldedit   | 6.1.10-SNAPSHOT          | worldedit-forge-mc1.12.2-6.1.10-SNAPSHOT-dist.jar | None                                     |
+
+
+	Plugins:
+
+	| State  | ID             | Version | Source                                         | Signature |
+	|:------ |:-------------- |:------- |:---------------------------------------------- |:--------- |
+	| LCHIJA | holograms      | 3.1.5   | holograms-3.1.5.jar                            | None      |
+	| LCHIJA | placeholderapi | 4.4     | PlaceholderAPI-4.4.jar                         | None      |
+	| LCHIJA | hologramsplus  | 1.0.0   | HologramsPlus-1.0.0.jar                        | None      |
+	| LCHIJA | luckperms      | 5.3.98  | LuckPerms-Sponge-5.3.98.jar                    | None      |
+	| LCHIJA | nucleus        | 2.4.1   | Nucleus-2.4.1-MC1.12.2-SpongeAPI7.3-plugin.jar | None      |
+	| LCHIJA | totaleconomy   | 1.8.1   | TotalEconomy-1.8.1.jar                         | None      |
+	| LCHIJA | trixtalogin    | 1.0     | TrixtaLogin.jar                                | None      |
+
+	Loaded coremods (and transformers): 
+SpongeCoremod (spongeforge-1.12.2-2838-7.4.8-RC4141.jar)
+  org.spongepowered.common.launch.transformer.SpongeSuperclassTransformer
+	Profiler Position: N/A (disabled)
+	Player Count: 2 / 20; [EntityPlayerMP['Kevinuj'/43, l='survival', x=-255,92, y=76,54, z=225,23], EntityPlayerMP['GefryUM'/43522, l='survival', x=-296,24, y=179,47, z=253,92]]
+	Is Modded: Definitely; Server brand changed to 'fml,forge,sponge'
+	Type: Dedicated Server (map_server.txt)

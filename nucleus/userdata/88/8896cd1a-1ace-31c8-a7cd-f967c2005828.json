@@ -1,0 +1,23 @@
+{
+  "data_version": 2,
+  "lastLogin": 1656271154524,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1656268084794,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "Holi123",
+  "fly": false,
+  "homes": {
+    "parkur": {
+      "x": -70.5405753109732,
+      "y": 70,
+      "z": 784.3370356246696,
+      "rotx": 40.95033645629883,
+      "roty": -172.34840393066406,
+      "rotz": 0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  },
+  "powertools": {}
+}
