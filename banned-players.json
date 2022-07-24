@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "uuid": "e70fadfa-1e68-34f5-baa8-ec75e8fa9a04",
+    "name": "SigmaBypassLzz",
+    "created": "2022-07-06 17:38:30 -0500",
+    "source": "Kevinuj",
+    "expires": "forever",
+    "reason": "Scripter de MRD crasheando el server!"
+  }
+]
