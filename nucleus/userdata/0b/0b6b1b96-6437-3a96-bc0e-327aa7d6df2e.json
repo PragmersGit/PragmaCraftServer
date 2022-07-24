@@ -1,11 +1,12 @@
 {
   "data_version": 2,
-  "lastLogin": 1656271576231,
+  "lastLogin": 1657805710118,
   "lastIP": "/0:0:0:0:0:0:0:1",
   "vanish": false,
   "firstJoin": 1656180197406,
   "firstJoinProcessed": true,
   "jailOnNextLogin": false,
   "lastKnownName": "Kevinuj",
-  "fly": false
+  "fly": true,
+  "powertools": {}
 }
