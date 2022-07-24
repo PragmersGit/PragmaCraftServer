@@ -1,11 +1,11 @@
 {
   "data_version": 2,
-  "lastLogin": 1656307937168,
+  "lastLogin": 1657145065597,
   "lastIP": "/0:0:0:0:0:0:0:1",
   "vanish": false,
-  "firstJoin": 1656183677583,
+  "firstJoin": 1656440004409,
   "firstJoinProcessed": true,
   "jailOnNextLogin": false,
-  "lastKnownName": "GefryUM",
-  "fly": false
+  "lastKnownName": "diegos2l",
+  "fly": true
 }

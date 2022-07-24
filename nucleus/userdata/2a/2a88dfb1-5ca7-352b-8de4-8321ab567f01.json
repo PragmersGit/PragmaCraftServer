@@ -1,11 +1,12 @@
 {
   "data_version": 2,
-  "lastLogin": 1656272027271,
+  "lastLogin": 1656307937168,
   "lastIP": "/0:0:0:0:0:0:0:1",
   "vanish": false,
   "firstJoin": 1656183677583,
   "firstJoinProcessed": true,
   "jailOnNextLogin": false,
   "lastKnownName": "GefryUM",
-  "fly": false
+  "fly": false,
+  "powertools": {}
 }
