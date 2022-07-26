@@ -1,1 +1,1 @@
-java -Xms1336M -Xmx1336M -jar forge-1.12.2-14.23.5.2860.jar nogui
+java -Xms1024m -Xmx1024m -jar forge-1.12.2-14.23.5.2860.jar nogui
