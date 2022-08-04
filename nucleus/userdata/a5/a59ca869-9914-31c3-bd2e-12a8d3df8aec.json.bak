@@ -1,0 +1,22 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659568673761,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "vanish": false,
+  "firstJoin": 1659133550203,
+  "firstJoinProcessed": true,
+  "jailOnNextLogin": false,
+  "lastKnownName": "IsaxChan",
+  "fly": false,
+  "homes": {
+    "home": {
+      "x": 184.77643697155258,
+      "y": 63.0,
+      "z": 704.6459917461078,
+      "rotx": 17.099899291992188,
+      "roty": 89.5673828125,
+      "rotz": 0.0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  }
+}

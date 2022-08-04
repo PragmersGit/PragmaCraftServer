@@ -1,0 +1,23 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659584272750,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659576342097,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "DecaUwU",
+  "fly": false,
+  "homes": {
+    "home": {
+      "x": 389.9552183903872,
+      "y": 95.0,
+      "z": 661.0848682871153,
+      "rotx": 16.102745056152344,
+      "roty": 55.314697265625,
+      "rotz": 0.0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  },
+  "powertools": {}
+}

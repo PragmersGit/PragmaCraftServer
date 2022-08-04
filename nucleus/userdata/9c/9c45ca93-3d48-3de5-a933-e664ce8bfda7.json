@@ -1,0 +1,23 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659579336749,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659574505602,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "Minecraft",
+  "fly": false,
+  "powertools": {},
+  "homes": {
+    "home": {
+      "x": 142.12927846410605,
+      "y": 59.0,
+      "z": 649.6803113573138,
+      "rotx": -1.4341692924499512,
+      "roty": 54.337303161621094,
+      "rotz": 0.0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  }
+}

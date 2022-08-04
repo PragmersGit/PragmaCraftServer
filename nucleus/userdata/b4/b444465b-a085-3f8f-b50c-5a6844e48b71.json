@@ -1,0 +1,23 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659573657944,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659568147138,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "Anyeliv",
+  "fly": false,
+  "homes": {
+    "home": {
+      "x": 217.79031197977784,
+      "y": 67.0,
+      "z": 696.839025628422,
+      "rotx": 17.25007438659668,
+      "roty": -195.52017211914062,
+      "rotz": 0.0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  },
+  "powertools": {}
+}

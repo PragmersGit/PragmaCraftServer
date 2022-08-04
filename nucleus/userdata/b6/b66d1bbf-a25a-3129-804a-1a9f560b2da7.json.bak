@@ -1,0 +1,23 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659584574965,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659568944801,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "JhonM26",
+  "fly": false,
+  "homes": {
+    "casa": {
+      "x": 258.37981569289457,
+      "y": 64.0,
+      "z": 674.9062107452411,
+      "rotx": 23.954998016357422,
+      "roty": 24.7679443359375,
+      "rotz": 0.0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  },
+  "powertools": {}
+}
