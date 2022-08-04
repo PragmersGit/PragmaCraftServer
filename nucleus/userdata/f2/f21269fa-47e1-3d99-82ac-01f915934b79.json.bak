@@ -1,0 +1,23 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659593034278,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659569721953,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "IDitroyer",
+  "fly": false,
+  "homes": {
+    "home": {
+      "x": 230.54661816143187,
+      "y": 64,
+      "z": 722.6916843848459,
+      "rotx": 25.650001525878906,
+      "roty": -111.7396240234375,
+      "rotz": 0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  },
+  "powertools": {}
+}

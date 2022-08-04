@@ -1,0 +1,23 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659581929232,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659568469537,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "SantiVel1012",
+  "fly": false,
+  "homes": {
+    "home": {
+      "x": 236.69717956146192,
+      "y": 63.0,
+      "z": 737.860608405639,
+      "rotx": 28.350101470947266,
+      "roty": 259.5078125,
+      "rotz": 0.0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  },
+  "powertools": {}
+}

@@ -1,0 +1,22 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659572116101,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659569650799,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "Felikin",
+  "fly": false,
+  "homes": {
+    "home": {
+      "x": 438.6666732501983,
+      "y": 64.0,
+      "z": 585.41955284677,
+      "rotx": 31.199947357177734,
+      "roty": -204.45263671875,
+      "rotz": 0.0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  }
+}
