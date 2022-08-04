@@ -1,0 +1,23 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659584169037,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659574408802,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "cbayo",
+  "fly": false,
+  "homes": {
+    "home": {
+      "x": 398.97345391547583,
+      "y": 63,
+      "z": 650.6874489385991,
+      "rotx": 30.600006103515625,
+      "roty": 177.7431640625,
+      "rotz": 0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  },
+  "powertools": {}
+}
