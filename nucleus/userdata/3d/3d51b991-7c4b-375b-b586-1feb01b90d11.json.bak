@@ -1,0 +1,22 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659571555949,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659569178999,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "Dynamo2714",
+  "fly": false,
+  "homes": {
+    "home": {
+      "x": 368.07354490400354,
+      "y": 63.0,
+      "z": 679.2202741475777,
+      "rotx": 22.650020599365234,
+      "roty": 164.54052734375,
+      "rotz": 0.0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  }
+}

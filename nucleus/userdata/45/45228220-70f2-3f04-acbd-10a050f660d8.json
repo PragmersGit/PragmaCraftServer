@@ -1,0 +1,23 @@
+{
+  "data_version": 2,
+  "lastLogin": 1659572347940,
+  "lastIP": "/0:0:0:0:0:0:0:1",
+  "firstJoin": 1659571109269,
+  "firstJoinProcessed": true,
+  "vanish": false,
+  "jailOnNextLogin": false,
+  "lastKnownName": "fechop15",
+  "fly": false,
+  "powertools": {},
+  "homes": {
+    "home": {
+      "x": 300.01716012767844,
+      "y": 63.0,
+      "z": 607.3000000119209,
+      "rotx": 27.599943161010742,
+      "roty": -344.2569274902344,
+      "rotz": 0.0,
+      "world": "6b11e8eb-6e53-4acb-9fc2-7acc5b22b596"
+    }
+  }
+}
